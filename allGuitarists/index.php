@@ -67,10 +67,6 @@ require '../connect.php';
                         for ($i = 0; $i < mysqli_num_rows($r); $i++)
                         {
                             $guitarist = mysqli_fetch_array($r);
-//                        echo "<h1><a href='guitarist.php?id=$author[Id]'>".$author[Name]."</a></h1>";
-//                        echo "<br>";
-//                        echo "  <a href='guitarist.php?id=$author[Id]''><img src='$author[Img]' alt='' height='500px'></a><br>";
-//                        echo "<p>", substr($author[Description], 0, 500)," . . .</p>";
                             echo " 
            
                 <div><div><a href='../guitarist/index.php?id=$guitarist[Id]''><img src='../$guitarist[Img]' alt='' height='300px'></a><h3><a href='../guitarist/index.php?id=$guitarist[Id]'>" . $guitarist['Name'] . "</a></h3></div></div>

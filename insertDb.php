@@ -9,14 +9,9 @@
 <body>
 <?php
 require 'connect.php';
-//$mysql = new mysqli("localhost", "root", '', "TabsDb");
+
 $mysql->query("SET NAMES 'utf8'");
 
-//if ($mysql->connect_error)
-//{
-//    echo('Error number: ' . $mysql->connect_errno . '<br>');
-//    die('Error: ' . $mysql->connect_error);
-//}
 
 $mysql->query("DROP TABLE SongTable");
 $mysql->query("DROP TABLE GuitaristTable");

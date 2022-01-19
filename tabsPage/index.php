@@ -81,12 +81,6 @@ require '../connect.php';
                     {
                         $strSQL = $strSQL . " where " . $strSQLW;
                     }
-                    //                $mysql = new mysqli("localhost", "root", '', "TabsDb");
-                    //                if ($mysql->connect_error)
-                    //                {
-                    //                    echo('Error number: ' . $mysql->connect_errno . '<br>');
-                    //                    die('Error: ' . $mysql->connect_error);
-                    //                }
 
                     $mysql->query($strSQL);
                     $r = $mysql->query($strSQL);
