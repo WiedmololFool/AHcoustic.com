@@ -1,0 +1,96 @@
+*{box-sizing: border-box}
+header {
+ overflow: hidden;
+ padding: 15px 10px;
+}
+
+.header__content{
+    max-width: 1800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+header a{
+    float:left;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none ;
+    line-height: 25px;
+    border-radius: 4px;
+    font-size: 20px;
+    margin: 0 5px;
+}
+
+header a.header__logo{
+    font-size: 35px;
+    font-weight: bold;
+    color: #744c40;
+}
+
+.menu__item:hover, .menu__item.active{
+    color: red;
+    text-decoration: underline ;
+}
+
+nav{
+    float: right;
+}
+@media (max-width: 714px) {
+    .header a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    nav {
+        float: none;
+
+    }
+}
+
+
+.menu__item {
+    cursor: pointer;
+    color: #4d4d4d;
+}
+
+.menu__item.icon {
+    display: none;
+}
+
+.menu__item.menu__item:hover, .menu__item.menu__item_active {
+    color: red;
+    text-decoration: underline;
+}
+
+.menu__item.icon:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.page-title-overlay {
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    background-color: #413333;
+    flex-direction: column;
+    text-align: center;
+}
+
+.page-title {
+    font-size: 36px;
+    color: white;
+    line-height: 30px;
+}
+
+.page-subtitle {
+    color: #ffffff;
+}
+
+
+@media (max-width: 767px) {
+    .page-title-overlay {
+        height: 125%;
+    }
+}

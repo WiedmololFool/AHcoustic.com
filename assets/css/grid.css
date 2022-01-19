@@ -1,0 +1,26 @@
+.grid {
+    /*border: 5px solid #d1e231;*/
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+@media (max-width: 992px) {
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 767px) {
+    .grid{
+        grid-template-columns: none;
+    }
+}
+
+.grid > * {
+    /*background-color: #ffbf94;*/
+    border-radius: 5px;
+    padding: 7px;
+    margin: 1px;
+    text-align: center;
+}
